@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Our Services - Precision Tech Solutions LLC</title>
+  <meta name="description" content="Discover the range of IT services offered by Precision Tech Solutions LLC including staffing, consulting, and cloud solutions." />
+  <meta name="keywords" content="IT Services, Consulting, Cloud, Staffing, Precision Tech Solutions" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="icon" href="imgs/Precisiontech Solutions LLC Logo.png" type="image/png" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      padding-top: 70px;
+      background-color: #f9f9f9;
+    }
+
+    .footer {
+      background-color: #f8f9fa;
+      padding: 30px 0;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .service-card {
+      transition: transform 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+
+    /* Dark mode styling */
+    html[data-theme="dark"] {
+      background-color: #121212;
+      color: #f1f1f1;
+    }
+
+    html[data-theme="dark"] body {
+      background-color: #121212;
+      color: #f1f1f1;
+    }
+
+    html[data-theme="dark"] .bg-light,
+    html[data-theme="dark"] .card,
+    html[data-theme="dark"] .navbar-light,
+    html[data-theme="dark"] .footer {
+      background-color: #1e1e1e !important;
+      color: #f1f1f1 !important;
+    }
+
+    html[data-theme="dark"] .card-title,
+    html[data-theme="dark"] .card-text,
+    html[data-theme="dark"] p,
+    html[data-theme="dark"] h1,
+    html[data-theme="dark"] h2,
+    html[data-theme="dark"] h3 {
+      color: #f1f1f1 !important;
+    }
+
+    html[data-theme="dark"] a {
+      color: #add8e6;
+    }
+
+    html[data-theme="dark"] .navbar-light .navbar-nav .nav-link {
+      color: #f1f1f1 !important;
+    }
+
+    html[data-theme="dark"] .btn-outline-secondary {
+      border-color: #ccc;
+      color: #ccc;
+    }
+
+    html[data-theme="dark"] .btn-outline-secondary:hover {
+      background-color: #333;
+      color: #fff;
+    }
+
+    html[data-theme="dark"] .service-card {
+      background-color: #1e1e1e;
+      color: #f1f1f1;
+    }
+
+    #toggleThemeBtn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+      font-size: 24px;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Dark Mode Toggle Button -->
+  <button id="toggleThemeBtn" title="Toggle Dark Mode">🌙</button>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="imgs/Precisiontech Solutions LLC Logo.png" alt="Precision Tech Solutions Logo" height="40" />
+        <span class="ms-2 fw-bold">Precision Tech Solutions</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Services Section -->
+  <section class="container my-5">
+    <h2 class="text-center mb-4">Our Services</h2>
+    <div class="row g-4">
+      <div class="col-md-4" data-aos="fade-up">
+        <div class="card h-100 shadow-sm p-3 service-card">
+          <h5 class="card-title">IT Staffing Solutions</h5>
+          <p class="card-text">We connect top IT talent with forward-thinking companies, ensuring the right fit for both short-term projects and long-term roles.</p>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="card h-100 shadow-sm p-3 service-card">
+          <h5 class="card-title">Technology Consulting</h5>
+          <p class="card-text">Leverage our expertise in digital transformation, application modernization, and cloud migration to accelerate your business goals.</p>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card h-100 shadow-sm p-3 service-card">
+          <h5 class="card-title">Custom Software Development</h5>
+          <p class="card-text">Our developers build scalable web, mobile, and enterprise solutions tailored to your unique business needs.</p>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up">
+        <div class="card h-100 shadow-sm p-3 service-card">
+          <h5 class="card-title">Cloud & DevOps</h5>
+          <p class="card-text">Optimize performance, security, and scalability with our cloud-native development and DevOps automation expertise.</p>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="card h-100 shadow-sm p-3 service-card">
+          <h5 class="card-title">Data & Analytics</h5>
+          <p class="card-text">Turn raw data into actionable insights using our data engineering, visualization, and machine learning services.</p>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card h-100 shadow-sm p-3 service-card">
+          <h5 class="card-title">IT Support & Maintenance</h5>
+          <p class="card-text">Ensure your systems run smoothly with our proactive monitoring, support, and managed IT services.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Precision Tech Solutions LLC. All rights reserved.</p>
+      <p>
+        <a href="#">Privacy Policy</a> |
+        <a href="#">Terms</a> |
+        <a href="mailto:contact@precisiontech.com">contact@precisiontech.com</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    const toggleBtn = document.getElementById('toggleThemeBtn');
+    const root = document.documentElement;
+
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+      root.setAttribute('data-theme', savedTheme);
+      toggleBtn.textContent = savedTheme === 'dark' ? '☀️' : '🌙';
+    }
+
+    toggleBtn.addEventListener('click', () => {
+      const currentTheme = root.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+      toggleBtn.textContent = newTheme === 'dark' ? '☀️' : '🌙';
+    });
+  </script>
+</body>
+</html>
